@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body 
+{
+    background: #000;
+    min-height: 90vh;
+
+}
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    margin-top: 300px;
+    border-radius: 2%;
+    background: #fff
+
+    }
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.registros{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+     border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+
+
+
+header
+{
+    z-index:10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;    
+}
+
+
+header.sticky
+{
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6;
+    
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+    
+}
+
+header ul li a
+{
+    position: relative;
+    margin: 0 15px ;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+    
+}
+   
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #000;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body
+{
+
+    display: flex;
+    justify-content: center;
+    margin: 350px;
+    align-items: 100vh;
+    background-size: #fbe9e7;
+}
+.card
+{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: #fff;
+    margin-top: 190px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+    transition: 1s;     
+}
+
+.card:hover 
+{
+    transform: translateX(50%);
+}
+.card .imgBox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background: #000;
+    transition: 1s;
+    box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+
+}
+
+.card:hover .imgBox
+{
+    transform: rotateY(-180deg);
+}
+.card .imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.card .imgBox img:nth-child(2)
+{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card .details 
+{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .details .content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .details .content h2 span
+{
+    color: #e21212;
+    font-size: 0.8em;
+}
+.card .details .content .social-icons
+{
+    position: relative;
+    display: flex;
+    margin-top: 10px
+}
+.card .details .content .social-icons a
+{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 8px; 
+    font-size: 18px;
+    transition: 0,2s;
+}
+.card .details .content .social-icons a:hover
+{
+    background: #e21212;
+}
+
+
+* 
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.sectionOB
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.sectionOB .content 
+{
+    max-width: 80%;
+    color: #fff; 
+}
+.sectionOB .content h2
+{
+    font-size: 5.5em; 
+
+}
+.sectionOB .content p
+{
+    font-size: 2em; 
+
+}
+
+
+canvas
+{
+    position: relative;
+    width: 1200px;
+    height: 850px;
+    background: #ffff;
+    z-index: 2;
+    mix-blend-mode: screen;
+}
+
+
+
+
+
+
+
+
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  margin-top: 200px;
+  width: 100%;
+  height: 1px;
+  color: white;
+}
+
+.inner-footer
+ {
+    padding: 14px;
+    margin: 0;
+    background: #272727; 
+ }
+.social-links
+{
+    display: flex;
+}
+.social-links ul
+{
+    padding: 3px;
+    display: flex;
+    width: 300px;
+    height: 80px;
+    margin: auto;
+    
+}
+.social-items
+{
+    list-style: none;
+}
+.social-items a
+{
+    padding: 35px 35px;
+    font-size: 40px;
+    color: white; 
+    transition: all 0.25s;
+}
+.social-items a:hover
+{
+    color: #6cccc6;
+}
+.quick-links
+{
+    display: flex;
+
+}
+.quick-links ul
+{
+    display: flex;
+    width: 560;
+    height: 70;
+    margin: auto;
+}
+.quick-items
+{
+    list-style: none;
+}
+.quick-items a
+{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 16px;   
+    color: #fff;
+    transition: all 0.25s; 
+}
+.quick-items a:hover
+{
+    color: #6cccc6;
+}
+.outer-footer
+{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background: #45526c;
+}
+
+

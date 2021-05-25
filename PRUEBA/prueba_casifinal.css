@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+/** ---------------- CUADRITOS CON BASTANTE INFORMACION ---------------       */
+
+.body4
+{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	min-height: 100vh; 
+	background: #222;
+
+}
+
+.container4
+{
+	position: relative;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(450px, 1fr) );
+	grid-template-rows:  minmax(100px, auto);
+	margin: 40px;
+	grid-auto-flow: dense;
+	grid-gap: 10px; 
+}
+	.container4 .box4
+{
+	background: #333;
+	padding: 20px; 
+	display: grid;
+	font-size: 20px;
+	place-items: center;
+	text-align: center;
+	color: #fff;
+	transition: 0.5s;
+}
+.container4 .box4:hover
+{
+	background: #e91e63;
+}
+.container4 .box4 img
+{
+	position: relative;
+	max-width: 125px;
+	margin-bottom: 10px; 	
+}
+.container4 .box4:nth-child(1)
+{
+	grid-column: span 2;
+	grid-row: span 1;
+}
+.container4 .box4:nth-child(2)
+{
+	grid-column: span 1;
+	grid-row: span 2;
+}
+.container4 .box4:nth-child(4)
+{
+	grid-column: span 1;
+	grid-row: span 2;
+}
+.container4 .box4:nth-child(5)
+{
+	grid-column: span 3;
+	grid-row: span 1;
+}
+@media (max-width: 900px)
+{
+	.container4
+	{
+		
+		grid-template-columns: repeat( auto-fit, minmax(50%, 1fr) );
+		grid-template-rows:  minmax(auto, auto);
+	
+	}
+}
